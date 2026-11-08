@@ -1,4 +1,4 @@
-name: reproduce
+name: validate
 
 on:
   push:
@@ -6,21 +6,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  artifact-capsule:
+  quality-and-reference-capsule:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
         with:
           version: "0.11.26"
-          python-version: "3.12.14"
+          python-version: "3.12"
           enable-cache: true
       - run: uv sync --frozen --extra dev
-      - run: uv run --frozen python scripts/reproduce_capsule.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: sawp-reproduction-report
-          path: |
-            results/reproduction_report.json
-            results/figures/*.png.json
+      - run: uv run --frozen ruff check src tests scripts
+      - run: uv run --frozen pytest
+      - run: uv run --frozen python scripts/verify_capsule.py
 
