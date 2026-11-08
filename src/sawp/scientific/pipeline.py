@@ -56,10 +56,6 @@ class ScientificPipeline:
         era5 = self.config.paths.raw_era5
         domain = self.config.paths.raw_domain
         return (
-            era5 / "Era5_Dataset_decomposit.nc",
-            era5 / "Era5_Dataset_evp.nc",
-            era5 / "Era5_Dataset_lh.nc",
-            era5 / "Era5_Dataset_lhsh.nc",
             era5 / "Era5_Dataset_meanHF.nc",
             era5 / "Era5_Dataset_sst.nc",
             era5 / "Era5_Dataset_t_q.nc",

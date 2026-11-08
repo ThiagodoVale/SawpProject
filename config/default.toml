@@ -1,12 +1,11 @@
 [project]
 name = "SAWP"
-version = "1.0.1"
+version = "1.1.0"
 
 [paths]
 # Relative paths are resolved from this file.
 workspace = ".."
 results = "../results"
-reference_figures = "../data/reference_figures"
 raw_data = "../data/raw"
 raw_era5 = "../data/raw/era5"
 raw_rainfall = "../data/raw/rainfall"
@@ -63,15 +62,4 @@ python = "auto"
 chunk_size = 32
 workers = 1
 strict = true
-
-[cache]
-# NetCDF is most efficient for a single clean reproduction. Enable Zarr when the
-# same monthly fields will be reused across multiple experiments.
-use_zarr = false
-zarr_directory = "data/interim/zarr"
-time_chunk = 12
-level_chunk = 1
-latitude_chunk = 45
-longitude_chunk = 50
-compression_level = 5
 

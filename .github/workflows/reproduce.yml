@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  quality-and-reference-capsule:
+  minimal-pipeline:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,5 +18,5 @@ jobs:
       - run: uv sync --frozen --extra dev
       - run: uv run --frozen ruff check src tests scripts
       - run: uv run --frozen pytest
-      - run: uv run --frozen python scripts/verify_capsule.py
-
+      - run: uv run --frozen python scripts/download_era5.py --help
+      - run: uv run --frozen python scripts/generate_figures.py --help

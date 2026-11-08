@@ -8,8 +8,6 @@ import xarray as xr
 
 from sawp.config import ProjectConfig
 
-from .cache import open_zarr_cache, write_zarr_cache
-
 GRAVITY = 9.80665
 
 
@@ -21,10 +19,6 @@ def open_canonical(
     config: ProjectConfig | None = None,
 ) -> xr.Dataset:
     """Open a NetCDF file and normalize coordinate names and ordering."""
-    if config is not None and config.cache.use_zarr:
-        cached = open_zarr_cache(config, path, chunks=chunks)
-        if cached is not None:
-            return cached
     # ERA5 files use more than one naming convention. Chunk only after the
     # coordinates have canonical names so one request works for every file.
     dataset = xr.open_dataset(path, decode_times=decode_times)
@@ -43,10 +37,6 @@ def open_canonical(
     if "lon" in dataset.coords:
         longitude = ((dataset.lon + 180.0) % 360.0) - 180.0
         dataset = dataset.assign_coords(lon=longitude).sortby("lon")
-    if config is not None and config.cache.use_zarr:
-        destination = write_zarr_cache(dataset, path, config)
-        dataset.close()
-        return xr.open_zarr(destination, consolidated=True, chunks=chunks or {})
     if chunks:
         available = {name: size for name, size in chunks.items() if name in dataset.dims}
         if available:

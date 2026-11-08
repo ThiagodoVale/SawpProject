@@ -67,41 +67,15 @@ class RuntimeConfig:
 
 
 @dataclass(frozen=True)
-class CacheConfig:
-    use_zarr: bool = False
-    zarr_directory: str = "data/interim/zarr"
-    time_chunk: int = 12
-    level_chunk: int = 1
-    latitude_chunk: int = 45
-    longitude_chunk: int = 50
-    compression_level: int = 5
-
-
-@dataclass(frozen=True)
 class ProjectPaths:
     workspace: Path
     results: Path
-    reference_figures: Path
     raw_data: Path
     raw_era5: Path
     raw_rainfall: Path
     raw_domain: Path
     interim: Path
     processed: Path
-
-    @property
-    def data(self) -> Path:
-        """Compatibility alias for the explicit raw-data root."""
-        return self.raw_data
-
-    @property
-    def outputs(self) -> Path:
-        """Compatibility alias for intermediate scientific products."""
-        return self.interim
-
-    @property
-    def outputs_trended(self) -> Path:
-        return self.interim / "trended"
 
     @property
     def figures(self) -> Path:
@@ -119,7 +93,6 @@ class ProjectConfig:
     rainfall_qc: RainfallQCConfig
     domains: dict[str, Domain] = field(default_factory=dict)
     runtime: RuntimeConfig = field(default_factory=RuntimeConfig)
-    cache: CacheConfig = field(default_factory=CacheConfig)
     raw: dict[str, Any] = field(default_factory=dict, repr=False)
 
 
@@ -145,7 +118,6 @@ def load_config(path: str | Path | None = None) -> ProjectConfig:
     paths = ProjectPaths(
         workspace=_resolve(base, paths_raw["workspace"]),
         results=_resolve(base, paths_raw["results"]),
-        reference_figures=_resolve(base, paths_raw["reference_figures"]),
         raw_data=_resolve(base, paths_raw["raw_data"]),
         raw_era5=_resolve(base, paths_raw["raw_era5"]),
         raw_rainfall=_resolve(base, paths_raw["raw_rainfall"]),
@@ -178,6 +150,5 @@ def load_config(path: str | Path | None = None) -> ProjectConfig:
         rainfall_qc=RainfallQCConfig(**rainfall_raw),
         domains=domains,
         runtime=RuntimeConfig(**raw.get("runtime", {})),
-        cache=CacheConfig(**raw.get("cache", {})),
         raw=raw,
     )
