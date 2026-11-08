@@ -41,7 +41,7 @@ def _validate_version(version: str) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Freeze one validated SAWP release")
-    parser.add_argument("--version", default="1.0.0")
+    parser.add_argument("--version", default="1.0.1")
     parser.add_argument("--date", default=date.today().isoformat())
     args = parser.parse_args()
     _validate_version(args.version)

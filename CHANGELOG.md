@@ -2,6 +2,23 @@
 
 All notable changes to SAWP are documented here.
 
+## [1.0.1] - 2026-11-08
+
+Patch release for portable continuous integration.
+
+### Fixed
+
+- Changed the Python request from the unavailable exact patch `3.12.14` to the
+  portable minor request `3.12`.
+- Updated GitHub Actions to run lint, the complete test suite, and checksum
+  verification of all 18 versioned reference figures without requiring the large
+  raw NetCDF files that are intentionally excluded from Git.
+
+### Versioning
+
+- Every accepted small change now increments the patch version, and published tags
+  remain immutable.
+
 ## [1.0.0] - 2026-11-07
 
 First definitive reproducible release.

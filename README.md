@@ -1,13 +1,13 @@
-# SAWP 1.0.0
+# SAWP 1.0.1
 
 SAWP 1.0 is a modular raw-to-figure implementation of the South Atlantic Warm Pool
 (SAWP) and Eastern Northeast Brazil (ENEB) rainfall analyses. It reads the original
 ERA5 NetCDF files and measured rain-gauge text files, performs quality control and
 scientific preprocessing, and creates the 9 main and 9 supplementary figures.
 
-The definitive `v1.0.0` release freezes the raw-input inventory, Python dependency
+The current `v1.0.1` release freezes the raw-input inventory, Python dependency
 lock, 18 accepted reference figures, distribution artifacts, and SHA-256 manifests.
-See `CHANGELOG.md` and `docs/releases/v1.0.0.md` for the validated release record.
+See `CHANGELOG.md` and `docs/releases/v1.0.1.md` for the validated release record.
 
 ## Complete reproduction
 
@@ -36,7 +36,7 @@ cache can be enabled in `config/default.toml` or built explicitly with
 compression and is automatically invalidated when the size or modification time of
 its source NetCDF changes. It is a performance cache, never an authoritative input.
 
-The final validated clean run produced 161,646,110 bytes (0.151 GiB) of compact
+The final validated clean run produced 191,340,795 bytes (0.178 GiB) of compact
 scientific products, no legacy NPZ files, and all 18 PNGs. The multilevel atmospheric
 calculation is the dominant cost and typically takes 35-45 minutes on the validation
 machine. Runtime is hardware-dependent; the storage report is regenerated on every
@@ -102,10 +102,16 @@ uv run --frozen python scripts/generate_all_figures.py --dry-run
 # Run one public figure producer
 uv run --frozen python scripts/products/figure_1.py
 
-# Build and freeze the v1.0.0 release after a successful clean reproduction
+# Build and freeze the v1.0.1 release after a successful clean reproduction
 uv build
-uv run --frozen python scripts/freeze_release.py --version 1.0.0
+uv run --frozen python scripts/freeze_release.py --version 1.0.1
 ```
+
+## Versioning policy
+
+Every accepted small change increments the patch component of the version. For
+example, the change after `v1.0.1` is released as `v1.0.2`. Published tags are
+immutable; fixes are released under a new tag rather than moving an existing tag.
 
 ## Original publication rendering
 

@@ -1,6 +1,6 @@
 [project]
 name = "SAWP"
-version = "1.0.0"
+version = "1.0.1"
 
 [paths]
 # Relative paths are resolved from this file.
