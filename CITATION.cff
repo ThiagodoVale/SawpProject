@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript and this release."
+title: "SAWP: South Atlantic Warm Pool and ENEB rainfall analysis"
+type: software
+authors:
+  - family-names: "Silva"
+    given-names: "Thiago"
+version: 1.0.0
+date-released: 2026-11-07

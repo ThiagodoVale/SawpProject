@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "compact_bytes": 191340795,
+  "compact_gib": 0.17820000182837248,
+  "processed_bytes": 191340795,
+  "interim_bytes_excluding_zarr": 0,
+  "optional_zarr_bytes": 0,
+  "legacy_npz_count": 0,
+  "limit_gib": 3.0,
+  "passed": true,
+  "failures": []
+}

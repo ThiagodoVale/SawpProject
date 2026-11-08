@@ -1,0 +1,293 @@
+{
+  "products": [
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\Figure1.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\Figure1.png",
+      "generated_size": [
+        3551,
+        2853
+      ],
+      "reference_size": [
+        3551,
+        2853
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-1"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\Figure2.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\Figure2.png",
+      "generated_size": [
+        6331,
+        3450
+      ],
+      "reference_size": [
+        6331,
+        3450
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-2"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\Figure3.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\Figure3.png",
+      "generated_size": [
+        3606,
+        3072
+      ],
+      "reference_size": [
+        3606,
+        3072
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-3"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\Figure4.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\Figure4.png",
+      "generated_size": [
+        4180,
+        1971
+      ],
+      "reference_size": [
+        4180,
+        1971
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-4"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\Figure5.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\Figure5.png",
+      "generated_size": [
+        3549,
+        3072
+      ],
+      "reference_size": [
+        3549,
+        3072
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-5"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\Figure6.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\Figure6.png",
+      "generated_size": [
+        3549,
+        3072
+      ],
+      "reference_size": [
+        3549,
+        3072
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-6"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\Figure7.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\Figure7.png",
+      "generated_size": [
+        3307,
+        3575
+      ],
+      "reference_size": [
+        3307,
+        3575
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-7"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\Figure8.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\Figure8.png",
+      "generated_size": [
+        4443,
+        4973
+      ],
+      "reference_size": [
+        4443,
+        4973
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-8"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\Figure9.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\Figure9.png",
+      "generated_size": [
+        3708,
+        2934
+      ],
+      "reference_size": [
+        3708,
+        2934
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-9"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS1.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\FigureS1.png",
+      "generated_size": [
+        3498,
+        1098
+      ],
+      "reference_size": [
+        3498,
+        1098
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-s1"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS2.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\FigureS2.png",
+      "generated_size": [
+        3498,
+        1698
+      ],
+      "reference_size": [
+        3498,
+        1698
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-s2"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS3.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\FigureS3.png",
+      "generated_size": [
+        3498,
+        1698
+      ],
+      "reference_size": [
+        3498,
+        1698
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-s3"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS4.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\FigureS4.png",
+      "generated_size": [
+        2029,
+        2898
+      ],
+      "reference_size": [
+        2029,
+        2898
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-s4"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS5.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\FigureS5.png",
+      "generated_size": [
+        4530,
+        5280
+      ],
+      "reference_size": [
+        4530,
+        5280
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-s5"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS6.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\FigureS6.png",
+      "generated_size": [
+        8020,
+        7259
+      ],
+      "reference_size": [
+        8020,
+        7259
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-s6"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS7.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\FigureS7.png",
+      "generated_size": [
+        3722,
+        1484
+      ],
+      "reference_size": [
+        3722,
+        1484
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-s7"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS8.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\FigureS8.png",
+      "generated_size": [
+        3374,
+        2673
+      ],
+      "reference_size": [
+        3374,
+        2673
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-s8"
+    },
+    {
+      "generated": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS9.png",
+      "reference": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\reference_figures\\FigureS9.png",
+      "generated_size": [
+        2706,
+        2126
+      ],
+      "reference_size": [
+        2706,
+        2126
+      ],
+      "sha256_equal": true,
+      "thumbnail_mae": 0.0,
+      "visually_equivalent": true,
+      "product_id": "figure-s9"
+    }
+  ],
+  "failures": []
+}

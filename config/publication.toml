@@ -1,0 +1,256 @@
+[publication]
+title = "The Southwestern tropical Atlantic Ocean Warming Shapes Rainfall Patterns in Eastern Northeast Brazil"
+main_figures = 9
+supplementary_figures = 9
+
+[[stages]]
+id = "product-figure-1"
+executor = "native"
+description = "Materialize Figure 1 only"
+script = "scripts/products/figure_01.py"
+expected = ["results/figures/Figure1.png"]
+
+[[stages]]
+id = "product-figure-2"
+executor = "native"
+description = "Materialize Figure 2 only"
+script = "scripts/products/figure_02.py"
+expected = ["results/figures/Figure2.png"]
+
+[[stages]]
+id = "product-figure-3"
+executor = "native"
+description = "Materialize Figure 3 only"
+script = "scripts/products/figure_03.py"
+expected = ["results/figures/Figure3.png"]
+
+[[stages]]
+id = "product-figure-4"
+executor = "native"
+description = "Materialize Figure 4 only"
+script = "scripts/products/figure_04.py"
+expected = ["results/figures/Figure4.png"]
+
+[[stages]]
+id = "product-figure-5"
+executor = "native"
+description = "Materialize Figure 5 only"
+script = "scripts/products/figure_05.py"
+expected = ["results/figures/Figure5.png"]
+
+[[stages]]
+id = "product-figure-6"
+executor = "native"
+description = "Materialize Figure 6 only"
+script = "scripts/products/figure_06.py"
+expected = ["results/figures/Figure6.png"]
+
+[[stages]]
+id = "product-figure-7"
+executor = "native"
+description = "Materialize Figure 7 only"
+script = "scripts/products/figure_07.py"
+expected = ["results/figures/Figure7.png"]
+
+[[stages]]
+id = "product-figure-8"
+executor = "native"
+description = "Materialize Figure 8 only"
+script = "scripts/products/figure_08.py"
+expected = ["results/figures/Figure8.png"]
+
+[[stages]]
+id = "product-figure-9"
+executor = "native"
+description = "Materialize Figure 9 only"
+script = "scripts/products/figure_09.py"
+expected = ["results/figures/Figure9.png"]
+
+[[stages]]
+id = "product-figure-s1"
+executor = "native"
+description = "Materialize Figure S1 only"
+script = "scripts/products/figure_s01.py"
+expected = ["results/figures/FigureS1.png"]
+
+[[stages]]
+id = "product-figure-s2"
+executor = "native"
+description = "Materialize Figure S2 only"
+script = "scripts/products/figure_s02.py"
+expected = ["results/figures/FigureS2.png"]
+
+[[stages]]
+id = "product-figure-s3"
+executor = "native"
+description = "Materialize Figure S3 only"
+script = "scripts/products/figure_s03.py"
+expected = ["results/figures/FigureS3.png"]
+
+[[stages]]
+id = "product-figure-s4"
+executor = "native"
+description = "Materialize Figure S4 only"
+script = "scripts/products/figure_s04.py"
+expected = ["results/figures/FigureS4.png"]
+
+[[stages]]
+id = "product-figure-s5"
+executor = "native"
+description = "Materialize Figure S5 only"
+script = "scripts/products/figure_s05.py"
+expected = ["results/figures/FigureS5.png"]
+
+[[stages]]
+id = "product-figure-s6"
+executor = "native"
+description = "Materialize Figure S6 only"
+script = "scripts/products/figure_s06.py"
+expected = ["results/figures/FigureS6.png"]
+
+[[stages]]
+id = "product-figure-s7"
+executor = "native"
+description = "Materialize Figure S7 only"
+script = "scripts/products/figure_s07.py"
+expected = ["results/figures/FigureS7.png"]
+
+[[stages]]
+id = "product-figure-s8"
+executor = "native"
+description = "Materialize Figure S8 only"
+script = "scripts/products/figure_s08.py"
+expected = ["results/figures/FigureS8.png"]
+
+[[stages]]
+id = "product-figure-s9"
+executor = "native"
+description = "Materialize Figure S9 only"
+script = "scripts/products/figure_s09.py"
+expected = ["results/figures/FigureS9.png"]
+
+[[products]]
+id = "figure-1"
+label = "Figure 1"
+stage = "product-figure-1"
+reference = "Figure1.png"
+source = "data/processed/figures/Mapa_dominio_SAWP_ENEB_estacoes.png"
+
+[[products]]
+id = "figure-2"
+label = "Figure 2"
+stage = "product-figure-2"
+reference = "Figure2.png"
+source = "Series_TSM_Com_Sem_tendencia.png"
+
+[[products]]
+id = "figure-3"
+label = "Figure 3"
+stage = "product-figure-3"
+reference = "Figure3.png"
+source = "TSM_AnomaliasQuantis_Subplot.png"
+
+[[products]]
+id = "figure-4"
+label = "Figure 4"
+stage = "product-figure-4"
+reference = "Figure4.png"
+source = "figuras/Quiver_Alterados_20260925/03_Tendencias_com_referencia/Combined_Prec_TS_Subplot.png"
+
+[[products]]
+id = "figure-5"
+label = "Figure 5"
+stage = "product-figure-5"
+reference = "Figure5.png"
+source = "ACPC_AnomaliasQuantis_Subplot.png"
+
+[[products]]
+id = "figure-6"
+label = "Figure 6"
+stage = "product-figure-6"
+reference = "Figure6.png"
+source = "figuras/TransporteVaporConvergencia/TRSP_AnomaliasQuantis_Subplot.png"
+
+[[products]]
+id = "figure-7"
+label = "Figure 7"
+stage = "product-figure-7"
+reference = "Figure7.png"
+source = "figuras/GradienteEstabilidadeVertical/ThetaE_Quantis_original.png"
+
+[[products]]
+id = "figure-8"
+label = "Figure 8"
+stage = "product-figure-8"
+reference = "Figure8.png"
+source = "SAWP_subplot_unificado.png"
+
+[[products]]
+id = "figure-9"
+label = "Figure 9"
+stage = "product-figure-9"
+reference = "Figure9.png"
+source = "figuras/Subplot_CT_ST_quiver_referencia/Subplot_CT-ST_quiver_referencia_w_corrigido.png"
+
+[[products]]
+id = "figure-s1"
+label = "Figure S1"
+stage = "product-figure-s1"
+reference = "FigureS1.png"
+source = "data/processed/robustness/valid_stations_per_month.png"
+
+[[products]]
+id = "figure-s2"
+label = "Figure S2"
+stage = "product-figure-s2"
+reference = "FigureS2.png"
+source = "data/processed/robustness/robustness_completeness_series.png"
+
+[[products]]
+id = "figure-s3"
+label = "Figure S3"
+stage = "product-figure-s3"
+reference = "FigureS3.png"
+source = "data/processed/robustness/robustness_long_records_series.png"
+
+[[products]]
+id = "figure-s4"
+label = "Figure S4"
+stage = "product-figure-s4"
+reference = "FigureS4.png"
+source = "data/processed/stations_unusual_regime_map.png"
+
+[[products]]
+id = "figure-s5"
+label = "Figure S5"
+stage = "product-figure-s5"
+reference = "FigureS5.png"
+source = "outputs/reviewer_event_based_april/Panel_max_rainfall_vs_max_SST_with_without_trend_independent_maxima.png"
+
+[[products]]
+id = "figure-s6"
+label = "Figure S6"
+stage = "product-figure-s6"
+reference = "FigureS6.png"
+source = "figuras_revisor/S5C_matriz_pearson_metodo_original_AMJJ_anual_mascara_quantis_TSM.png"
+
+[[products]]
+id = "figure-s7"
+label = "Figure S7"
+stage = "product-figure-s7"
+reference = "FigureS7.png"
+source = "figuras_revisor/SX_monthly_composite_SAWP_SST_ENEB_rainfall_FebAug.png"
+
+[[products]]
+id = "figure-s8"
+label = "Figure S8"
+stage = "product-figure-s8"
+reference = "FigureS8.png"
+source = "figuras/Quiver_Alterados_20260925/02_CTST_e_circulacao/Subplot_Tendencias_AMJJ.png"
+
+[[products]]
+id = "figure-s9"
+label = "Figure S9"
+stage = "product-figure-s9"
+reference = "FigureS9.png"
+source = "figuras/CalorLatenteMedioComLag0/LH_AnomaliasQuantis_Lag0.png"

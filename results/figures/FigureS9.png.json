@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "product_id": "figure-s9",
+  "source_kind": "generated_from_raw",
+  "output": "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\results\\figures\\FigureS9.png",
+  "sha256": "911c19fe9040097fb29f956b5164120bbca3f6d0e8532ffd59891ffcc48a3f71",
+  "bytes": 700418,
+  "raw_inputs": [
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\era5\\Era5_Dataset_decomposit.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\era5\\Era5_Dataset_evp.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\era5\\Era5_Dataset_lh.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\era5\\Era5_Dataset_lhsh.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\era5\\Era5_Dataset_meanHF.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\era5\\Era5_Dataset_sst.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\era5\\Era5_Dataset_t_q.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\era5\\Era5_Dataset_u_v_w.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\domain\\sst.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\domain\\srtm30plus_v11_land.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\raw\\rainfall\\monitor"
+  ],
+  "processed_inputs": [
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\rainfall\\rain_gauge_monthly_matrix_qc.csv",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\rainfall\\rain_gauge_metadata_qc.csv",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\rainfall\\ENEB_monthly_precipitation_qc.csv",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\rainfall\\rain_gauge_homogeneity.csv",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\rainfall\\rainfall_robustness_series.csv",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\rainfall\\ENEB_AMJJ_annual.csv",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\ocean\\sst_amjj_annual.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\ocean\\sst_quantile_composites.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\ocean\\sawp_amjj_series.csv",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\ocean\\sawp_monthly_series.csv",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\ocean\\sst_trend_coefficients.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\atmosphere\\atmospheric_amjj_annual.nc",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\atmosphere\\atmospheric_amjj_series.csv",
+    "C:\\Users\\silva\\Documents\\sawp-api\\SAWP_v1.0\\data\\processed\\atmosphere\\atmospheric_trend_coefficients.nc"
+  ],
+  "created_utc": "2026-11-08T03:08:11.279279+00:00"
+}

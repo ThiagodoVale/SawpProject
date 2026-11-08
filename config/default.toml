@@ -1,0 +1,77 @@
+[project]
+name = "SAWP"
+version = "1.0.0"
+
+[paths]
+# Relative paths are resolved from this file.
+workspace = ".."
+results = "../results"
+reference_figures = "../data/reference_figures"
+raw_data = "../data/raw"
+raw_era5 = "../data/raw/era5"
+raw_rainfall = "../data/raw/rainfall"
+raw_domain = "../data/raw/domain"
+interim = "../data/interim"
+processed = "../data/processed"
+
+[period]
+start_year = 1959
+end_year = 2023
+climatology_start = 1980
+climatology_end = 2010
+season_months = [4, 5, 6, 7]
+
+[thresholds]
+extreme_cold = 0.10
+moderate_cold = 0.25
+moderate_warm = 0.75
+extreme_warm = 0.90
+significance = 0.05
+
+[rainfall_qc]
+minimum_mm = 0.0
+maximum_mm = 2000.0
+spatial_outlier_mm = 500.0
+spatial_outlier_median_factor = 5.0
+minimum_valid_stations = 30
+minimum_valid_fraction = 0.10
+nearest_neighbors = 10
+minimum_common_months = 60
+maximum_gap_months = 36
+states = ["AL", "PB", "PE", "RN", "CE", "BA", "SE", "PI", "MA"]
+
+[domains.sawp_index]
+west = -34.0
+east = -25.0
+south = -12.5
+north = -4.0
+
+[domains.sawp_figure1]
+west = -34.0
+east = -25.0
+south = -12.5
+north = -4.0
+
+[domains.eneb]
+west = -38.0
+east = -34.5
+south = -15.0
+north = 0.0
+
+[runtime]
+python = "auto"
+chunk_size = 32
+workers = 1
+strict = true
+
+[cache]
+# NetCDF is most efficient for a single clean reproduction. Enable Zarr when the
+# same monthly fields will be reused across multiple experiments.
+use_zarr = false
+zarr_directory = "data/interim/zarr"
+time_chunk = 12
+level_chunk = 1
+latitude_chunk = 45
+longitude_chunk = 50
+compression_level = 5
+
